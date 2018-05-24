@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body ng-controller="controladorBody">
+
+	<div>
+		<form ng-submit="inputApi()">
+			<input type="hidden" ng-model="pepe.id" /><br>
+			<input type="text" ng-model="pepe.nombre" placeholder="Nombre del bar" /><br>
+			<input type="text" ng-model="pepe.precio" placeholder="Precio del bar"/><br>
+			<input type="text" ng-model="pepe.cant_personas" placeholder="Capacidad del bar" /><br>
+			<input type="submit" value="enviar"/>
+		</form>
+
+	</div>
+	<br />
+	<h2>Para la clase que viene martes 15 de mayo hacer</h2>
+	<ul>
+		<li>Generar un formulario en el HTML e invocar al API</li>
+		<li>Insertar un bar en la base de datos pasando por el api</li>
+		<li>En el API generar el metodo POST que reciba el json</li>
+		<li>Utilizar JPA</li>
+	</ul>
+	<div ng-controller="controladorX">{{pedo}}</div>
+<br>
+<kevin-Perotti></kevin-Perotti>
+<br>
+<abm-Bar></abm-Bar>
+</body>
+
+</html>

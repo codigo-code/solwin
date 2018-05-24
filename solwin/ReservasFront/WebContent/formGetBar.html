@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form>
+		<input type="number" ng-model="idBar" placeholder="id del bar" /><br>
+		<button ng-click="callApi(this)">Aceptar</button>
+	</form>
+	<br />
+
+	<table border="1px solid">
+		<tr>
+			<td>nombre del bar</td>
+			<td>capacidad</td>
+			<td>precio por persona</td>
+		</tr>
+		<tr>
+			<td>{{nombreBar}}</td>
+			<td>{{capacidad}}</td>
+			<td>$ {{precio}}</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
